@@ -1,5 +1,12 @@
 # Multimodal chatbot using Chainlit and OpenAI
 
+## Here is a video:
+
+<video width="320" height="240" controls>
+  <source src="demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Overview
 
 This is a robust application that leverages OpenAI's powerful models for processing images and audio, and generating responses via a chat interface. This project is designed to be modular, production-friendly, and deployable using Docker.
