@@ -5,6 +5,9 @@
   Your browser does not support the video tag.
 </video>
 
+[Watch the video](https://raw.githubusercontent.com/kshitijkutumbe/multimodal-chatbot-chainlit/main/demo.mp4)
+
+
 ## Overview
 
 This is a robust application that leverages OpenAI's powerful models for processing images and audio, and generating responses via a chat interface. This project is designed to be modular, production-friendly, and deployable using Docker.
