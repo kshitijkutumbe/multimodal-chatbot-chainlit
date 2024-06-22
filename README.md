@@ -99,8 +99,6 @@ To deploy the application using Docker, use the following steps:
    docker run -p 8000:8000 my_project
 ```
 
-The project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
