@@ -1,10 +1,8 @@
-# Multimodal chatbot using chainlit and openai
-
-# My Project
+# Multimodal chatbot using Chainlit and OpenAI
 
 ## Overview
 
-**My Project** is a robust application that leverages OpenAI's powerful models for processing images and audio, and generating responses via a chat interface. This project is designed to be modular, production-friendly, and deployable using Docker.
+This is a robust application that leverages OpenAI's powerful models for processing images and audio, and generating responses via a chat interface. This project is designed to be modular, production-friendly, and deployable using Docker.
 
 ## Table of Contents
 
@@ -74,12 +72,40 @@
 
 The configuration settings for this project are managed using a `dataclass` in the `config.py` file.
 
-### `config.py`
+## Project Structure
 
-```python
-from dataclasses import dataclass
-import os
+The project is structured as follows:
 
-@dataclass
-class Config:
-    OPENAI_API_KEY: str = os.getenv('OPENAI_API_KEY', 'your_default_api_key_here')
+- `app/`: Contains the main application code.
+  - `__init__.py`
+  - `main.py`: Contains the main application logic.
+  - `api.py`: Handles interactions with the OpenAI API.
+  - `utils.py`: Includes utility functions.
+  - `config.py`: Manages configuration settings.
+  - `logger.py`: Configures logging settings.
+- `Dockerfile`: Defines the Docker image configuration.
+- `requirements.txt`: Lists the Python dependencies.
+- `template.py`: Script to create the project structure.
+
+## Logging
+
+Logging is configured using the `logger.py` module. Logs are written to the console with an INFO level.
+
+## Docker Deployment
+
+To deploy the application using Docker, use the following steps:
+```sh
+   docker build -t my_project .
+   docker run -p 8000:8000 my_project
+```
+
+The project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
